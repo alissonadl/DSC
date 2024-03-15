@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Nova página de teste</p>
+    <h1>PAGINA DO CONTROLLER</h1>
 </body>
 </html>

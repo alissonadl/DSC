@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Controller_de_Teste;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('welcome');
 });
 
-Route::get('/teste',function(){
+Route::get('/teste', function() {
     return view('teste');
 });
+
+Route::get('/nova-rota', [Controller_de_teste::class,'index']);

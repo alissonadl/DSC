@@ -4,20 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TesteController extends Controller
+class Controller_de_Teste extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() //Carrega tudo do banco de dados
     {
-        //
+        return view('pagina_controller_index');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create() //Carrega o formulário
     {
         //
     }
@@ -25,7 +25,7 @@ class TesteController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request) //Gravar/Salvar
     {
         //
     }
@@ -33,7 +33,7 @@ class TesteController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id) //Carrega um registro
     {
         //
     }
@@ -41,7 +41,7 @@ class TesteController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $id) //Editar formulário
     {
         //
     }
@@ -49,7 +49,7 @@ class TesteController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id) //Salvando as alterações
     {
         //
     }
@@ -57,7 +57,7 @@ class TesteController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $id) //Deletar
     {
         //
     }
